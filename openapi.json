@@ -2,7 +2,8 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Clasificador Pilar 4",
-    "version": "1.0"
+    "version": "1.0",
+    "description": "API que clasifica respuestas de estudiantes del Pilar 4 en Pre-aprobado, Revisión o Descartado."
   },
   "paths": {
     "/classify": {
@@ -19,7 +20,8 @@
                     "type": "string",
                     "format": "binary"
                   }
-                }
+                },
+                "required": ["file"]
               }
             }
           }
